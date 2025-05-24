@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail AI Chatbot Settings</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <div class="popup-header">
+            <div class="popup-title">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>
+                Gmail AI Assistant
+            </div>
+        </div>
+        
+        <div class="popup-content">
+            <div class="section">
+                <label for="api-key">OpenRouter API Key</label>
+                <div class="input-group">
+                    <input type="password" id="api-key" placeholder="Enter your OpenRouter API key">
+                    <button id="toggle-visibility" type="button">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="help-text">
+                    Get your free API key from <a href="https://openrouter.ai" target="_blank">OpenRouter.ai</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="status-container">
+                    <div class="status-indicator" id="status-indicator">
+                        <div class="status-dot"></div>
+                        <span id="status-text">Not configured</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <button id="save-button" class="primary-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20,6 9,17 4,12"/>
+                    </svg>
+                    Save Settings
+                </button>
+            </div>
+
+            <div class="section">
+                <div class="info-box">
+                    <div class="info-title">How to use:</div>
+                    <ol>
+                        <li>Enter your OpenRouter API key above</li>
+                        <li>Navigate to Gmail</li>
+                        <li>Open any email</li>
+                        <li>Use the AI sidebar to get summaries and ask questions</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="footer-links">
+                    <a href="https://openrouter.ai" target="_blank">Get API Key</a>
+                    <span>•</span>
+                    <a href="https://github.com" target="_blank">Support</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="notification" class="notification"></div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

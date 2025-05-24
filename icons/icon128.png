@@ -1,0 +1,63 @@
+<svg width="128" height="128" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad128" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6b73ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow128" x="-50%" y="-50%" width="200%" height="200%">
+      <dropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <dropShadow dx="0" dy="0" stdDeviation="2" flood-color="#ffffff" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  
+  <!-- Chat bubble background with enhanced shadow -->
+  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" 
+        fill="url(#grad128)" 
+        stroke="none" 
+        filter="url(#shadow128)"/>
+  
+  <!-- Subtle inner highlight -->
+  <path d="M19 5a1 1 0 0 1 1 1v9c0 .5-.2 1-.5 1.3L19 16V5z" 
+        fill="rgba(255,255,255,0.2)"/>
+  
+  <!-- AI brain icon with glow -->
+  <circle cx="9" cy="9" r="2" fill="white" filter="url(#glow)"/>
+  <circle cx="15" cy="9" r="2" fill="white" filter="url(#glow)"/>
+  <path d="M8 14c0 2.5 1.8 4 4 4s4-1.5 4-4" 
+        stroke="white" 
+        stroke-width="2.5" 
+        fill="none" 
+        stroke-linecap="round"
+        filter="url(#glow)"/>
+  
+  <!-- Enhanced sparkles and AI indicators -->
+  <circle cx="5.5" cy="6.5" r="1" fill="white" opacity="0.95"/>
+  <circle cx="18.5" cy="8.5" r="1" fill="white" opacity="0.95"/>
+  <circle cx="17" cy="5" r="0.7" fill="white" opacity="0.8"/>
+  <circle cx="7" cy="12" r="0.6" fill="white" opacity="0.7"/>
+  <circle cx="15.5" cy="12.5" r="0.4" fill="white" opacity="0.6"/>
+  
+  <!-- Neural network inspired lines -->
+  <path d="M6 7 L8 8.5 M18 8 L16 8.8 M10 10 L12 11.5 M14 10 L12 11.5" 
+        stroke="white" 
+        stroke-width="1.5" 
+        opacity="0.6" 
+        stroke-linecap="round"/>
+  
+  <!-- Tech-inspired elements -->
+  <path d="M9.5 4.5 L10.5 3.5 L9.5 2.5 M11.5 4.5 L10.5 3.5 L11.5 2.5
+           M13.5 4.5 L14.5 3.5 L13.5 2.5 M15.5 4.5 L14.5 3.5 L15.5 2.5" 
+        stroke="white" 
+        stroke-width="1.2" 
+        opacity="0.8" 
+        stroke-linecap="round"/>
+  
+  <!-- Subtle gradient overlay for depth -->
+  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" 
+        fill="url(#grad128)" 
+        opacity="0.1"
+        stroke="none"/>
+</svg>
